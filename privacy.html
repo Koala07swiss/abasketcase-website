@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité — A Basket Case</title>
+    <meta name="description" content="Politique de confidentialité du jeu A Basket Case. Quelles données sont collectées, pourquoi, et vos droits RGPD.">
+    <meta name="theme-color" content="#1A2845">
+
+    <link rel="icon" type="image/png" href="assets/icon-1024.png">
+    <link rel="apple-touch-icon" href="assets/icon-1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="index.html" class="brand">
+            <img src="assets/icon-1024.png" alt="A Basket Case">
+            <span>A Basket Case</span>
+        </a>
+        <nav>
+            <a href="privacy.html" class="active">Confidentialité</a>
+            <a href="terms.html">CGU</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container legal">
+
+        <h1>Politique de confidentialité</h1>
+        <p class="updated">Dernière mise à jour : 15 mai 2026</p>
+
+        <section>
+            <p>
+                Cette politique de confidentialité décrit les données personnelles collectées
+                par l'application <strong>A Basket Case</strong> (ci-après « l'application »),
+                l'usage qui en est fait, et vos droits conformément au Règlement Général sur
+                la Protection des Données (RGPD, Règlement UE 2016/679).
+            </p>
+            <p>
+                L'application est éditée par <strong>Béguerie Kévin</strong>, éditeur indépendant,
+                résidant à Roiffieux (France).
+            </p>
+        </section>
+
+        <section>
+            <h2>1. Responsable du traitement</h2>
+            <p>
+                Le responsable du traitement des données est :
+            </p>
+            <div class="card">
+                <h3>Coordonnées</h3>
+                <p>
+                    <strong>Béguerie Kévin</strong><br>
+                    Éditeur indépendant<br>
+                    Roiffieux, France<br>
+                    Email : <a href="mailto:contact@abasketcase.app">contact@abasketcase.app</a>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Données collectées</h2>
+            <p>
+                L'application collecte un nombre minimal de données, strictement nécessaires
+                à son fonctionnement.
+            </p>
+
+            <h3>2.1 Compte utilisateur</h3>
+            <p>
+                Pour vous permettre de sauvegarder vos scores et apparaître dans le classement,
+                un compte est créé selon la méthode d'authentification choisie :
+            </p>
+            <ul>
+                <li>
+                    <strong>Compte anonyme</strong> : un identifiant unique aléatoire est
+                    généré (UUID). Aucune information personnelle n'est associée.
+                </li>
+                <li>
+                    <strong>Sign in with Apple</strong> : votre identifiant Apple (token
+                    anonymisé), et optionnellement votre prénom si vous l'avez fourni à Apple.
+                </li>
+                <li>
+                    <strong>Connexion Google</strong> : votre adresse email Google et votre
+                    nom public (si vous les avez rendus visibles).
+                </li>
+            </ul>
+
+            <h3>2.2 Pseudo</h3>
+            <p>
+                Vous choisissez un pseudo affiché dans le classement public. Ce pseudo est
+                librement modifiable depuis les paramètres de l'application.
+            </p>
+
+            <h3>2.3 Données de jeu</h3>
+            <ul>
+                <li>Vos meilleurs scores (altitude atteinte, durée de partie)</li>
+                <li>La date de chaque partie enregistrée dans le classement</li>
+                <li>Votre pseudo associé à ces scores</li>
+            </ul>
+
+            <h3>2.4 Données techniques</h3>
+            <p>
+                L'application ne collecte <strong>aucune</strong> donnée technique de profilage
+                (analytics tiers, identifiants publicitaires IDFA, données de localisation,
+                listes de contacts, photos, micro, etc.).
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Finalités et bases légales</h2>
+            <p>
+                Les données collectées sont utilisées exclusivement pour :
+            </p>
+            <ul>
+                <li>
+                    <strong>Authentifier l'utilisateur</strong> et lier ses scores à son compte
+                    (base légale : exécution du contrat, art. 6.1.b RGPD).
+                </li>
+                <li>
+                    <strong>Maintenir le classement</strong> public des meilleurs scores
+                    (base légale : intérêt légitime, art. 6.1.f RGPD).
+                </li>
+                <li>
+                    <strong>Permettre la migration</strong> entre comptes (passer d'un compte
+                    anonyme à un compte lié Apple/Google sans perdre vos scores).
+                </li>
+            </ul>
+            <p>
+                <strong>Aucune donnée n'est utilisée à des fins publicitaires, commerciales,
+                ou cédée à des tiers.</strong>
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Sous-traitants</h2>
+            <p>
+                Pour assurer l'authentification et le stockage du classement, l'application
+                utilise les services suivants :
+            </p>
+            <ul>
+                <li>
+                    <strong>Firebase Authentication</strong> (Google LLC, États-Unis) — pour
+                    la gestion sécurisée des comptes (Apple / Google / anonyme).
+                </li>
+                <li>
+                    <strong>Cloud Firestore</strong> (Google LLC, États-Unis) — pour le
+                    stockage du classement et des pseudos.
+                </li>
+            </ul>
+            <p>
+                Ces services sont hébergés par Google Cloud Platform, dans des centres de
+                données situés en Europe et aux États-Unis. Le transfert des données vers
+                les États-Unis est encadré par les clauses contractuelles types de la
+                Commission européenne et le Data Privacy Framework approuvé en juillet 2023.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Durée de conservation</h2>
+            <p>
+                Vos données sont conservées tant que votre compte est actif. En cas de
+                suppression de compte (depuis les paramètres de l'application), toutes vos
+                données personnelles et vos scores sont définitivement supprimés sous
+                <strong>30 jours</strong>.
+            </p>
+            <p>
+                Si vous n'utilisez plus l'application pendant 3 ans, vos données peuvent être
+                supprimées automatiquement à l'issue de cette période.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Vos droits</h2>
+            <p>
+                Conformément au RGPD, vous disposez à tout moment des droits suivants :
+            </p>
+            <ul>
+                <li><strong>Droit d'accès</strong> : obtenir une copie des données vous concernant.</li>
+                <li><strong>Droit de rectification</strong> : corriger des données inexactes (notamment votre pseudo, modifiable depuis l'application).</li>
+                <li><strong>Droit à l'effacement</strong> : demander la suppression de votre compte et de vos données (disponible directement dans les paramètres de l'application).</li>
+                <li><strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré.</li>
+                <li><strong>Droit d'opposition</strong> : vous opposer au traitement.</li>
+                <li><strong>Droit à la limitation</strong> du traitement.</li>
+            </ul>
+            <p>
+                Pour exercer ces droits, contactez-moi à
+                <a href="mailto:contact@abasketcase.app">contact@abasketcase.app</a>.
+                Une réponse vous sera apportée dans un délai maximum d'un mois.
+            </p>
+            <p>
+                Vous disposez également du droit d'introduire une réclamation auprès de la
+                Commission Nationale de l'Informatique et des Libertés (CNIL) :
+                <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Sécurité</h2>
+            <p>
+                Les données sont stockées de façon sécurisée sur l'infrastructure Google Cloud
+                (Firebase), chiffrées au repos et en transit (TLS 1.3). L'accès aux données
+                est restreint par des règles Firestore strictes ne permettant à chaque
+                utilisateur d'accéder qu'à ses propres données.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Mineurs</h2>
+            <p>
+                L'application est tout public et ne cible pas spécifiquement les enfants de
+                moins de 13 ans. Si vous êtes un parent et constatez que votre enfant a
+                fourni des données sans votre consentement, contactez-moi pour suppression
+                immédiate à <a href="mailto:contact@abasketcase.app">contact@abasketcase.app</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Modifications</h2>
+            <p>
+                Cette politique peut être mise à jour pour refléter des changements
+                réglementaires ou techniques. La date de dernière mise à jour est indiquée
+                en haut du document. Les modifications substantielles seront communiquées
+                via l'application.
+            </p>
+        </section>
+
+        <div class="card">
+            <h3>Contact RGPD</h3>
+            <p>
+                Pour toute question relative à vos données personnelles ou pour exercer
+                vos droits, écrivez à
+                <a href="mailto:contact@abasketcase.app">contact@abasketcase.app</a>.
+            </p>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-credit">
+            Made in France with ❤️
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Accueil</a>
+            <a href="terms.html">CGU</a>
+            <a href="mailto:contact@abasketcase.app">Contact</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
