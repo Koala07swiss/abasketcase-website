@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Politique de confidentialité — A Basket Case</title>
-    <meta name="description" content="Politique de confidentialité du jeu A Basket Case. Quelles données sont collectées, pourquoi, et vos droits RGPD.">
+    <meta name="description" content="Politique de confidentialité du jeu A Basket Case. Données collectées, publicité AdMob, App Tracking Transparency, et vos droits RGPD.">
     <meta name="theme-color" content="#1A2845">
 
     <link rel="icon" type="image/png" href="assets/icon-1024.png">
@@ -50,9 +50,6 @@
 
         <section>
             <h2>1. Responsable du traitement</h2>
-            <p>
-                Le responsable du traitement des données est :
-            </p>
             <div class="card">
                 <h3>Coordonnées</h3>
                 <p>
@@ -68,7 +65,8 @@
             <h2>2. Données collectées</h2>
             <p>
                 L'application collecte un nombre minimal de données, strictement nécessaires
-                à son fonctionnement.
+                à son fonctionnement, à la gestion du classement en ligne et à l'affichage de la
+                publicité optionnelle.
             </p>
 
             <h3>2.1 Compte utilisateur</h3>
@@ -82,11 +80,12 @@
                     généré (UUID). Aucune information personnelle n'est associée.
                 </li>
                 <li>
-                    <strong>Sign in with Apple</strong> : votre identifiant Apple (token
-                    anonymisé), et optionnellement votre prénom si vous l'avez fourni à Apple.
+                    <strong>Sign in with Apple</strong> : un identifiant Apple anonymisé
+                    (token), et optionnellement votre prénom si vous l'avez fourni à Apple.
+                    Vous pouvez utiliser l'option « Masquer mon adresse e-mail » d'Apple.
                 </li>
                 <li>
-                    <strong>Connexion Google</strong> : votre adresse email Google et votre
+                    <strong>Connexion Google</strong> : votre adresse e-mail Google et votre
                     nom public (si vous les avez rendus visibles).
                 </li>
             </ul>
@@ -99,16 +98,41 @@
 
             <h3>2.3 Données de jeu</h3>
             <ul>
-                <li>Vos meilleurs scores (altitude atteinte, durée de partie)</li>
-                <li>La date de chaque partie enregistrée dans le classement</li>
-                <li>Votre pseudo associé à ces scores</li>
+                <li>Vos meilleurs scores (altitude atteinte, durée de partie) ;</li>
+                <li>La date de chaque partie enregistrée dans le classement ;</li>
+                <li>Votre pseudo associé à ces scores ;</li>
+                <li>Le statut d'achat du « Premium Pass » (acheté ou non), stocké localement et lié à votre identifiant Apple.</li>
             </ul>
 
-            <h3>2.4 Données techniques</h3>
+            <h3>2.4 Données collectées par la publicité (Google AdMob)</h3>
             <p>
-                L'application ne collecte <strong>aucune</strong> donnée technique de profilage
-                (analytics tiers, identifiants publicitaires IDFA, données de localisation,
-                listes de contacts, photos, micro, etc.).
+                Lorsque vous regardez une publicité récompensée optionnelle, et
+                <strong>uniquement si vous avez consenti au suivi via le pop-up « App Tracking
+                Transparency » (ATT) d'Apple</strong>, Google AdMob peut collecter :
+            </p>
+            <ul>
+                <li>L'identifiant publicitaire IDFA de votre appareil (réinitialisable à tout moment dans les Réglages iOS) ;</li>
+                <li>Des données techniques sur votre appareil (modèle iPhone, version d'iOS, langue, fuseau horaire, type de connexion) ;</li>
+                <li>Des données d'utilisation agrégées (impressions de publicités, clics) ;</li>
+                <li>Une approximation de votre localisation (pays, région) basée sur votre adresse IP.</li>
+            </ul>
+            <p>
+                <strong>Si vous refusez le suivi ATT</strong>, AdMob diffuse des publicités
+                <strong>non personnalisées</strong> qui ne collectent ni IDFA ni données
+                comportementales, mais peuvent collecter les données techniques minimales
+                ci-dessus à des fins de mesure et de prévention de la fraude.
+            </p>
+            <p>
+                <strong>Si vous achetez le « Premium Pass »</strong>, plus aucune publicité
+                n'est affichée et plus aucune donnée n'est transmise à AdMob.
+            </p>
+
+            <h3>2.5 Données NON collectées</h3>
+            <p>
+                L'application ne collecte <strong>aucune</strong> donnée suivante :
+                localisation précise (GPS), contacts, photos, micro, caméra, calendrier,
+                santé, données financières (les paiements sont gérés exclusivement par Apple),
+                historique de navigation web.
             </p>
         </section>
 
@@ -130,39 +154,84 @@
                     <strong>Permettre la migration</strong> entre comptes (passer d'un compte
                     anonyme à un compte lié Apple/Google sans perdre vos scores).
                 </li>
+                <li>
+                    <strong>Afficher la publicité récompensée optionnelle</strong> via
+                    AdMob, et la personnaliser si vous y avez consenti
+                    (base légale : consentement explicite via le pop-up ATT, art. 6.1.a RGPD).
+                </li>
+                <li>
+                    <strong>Vérifier le statut du Premium Pass</strong> pour désactiver
+                    la publicité après achat (base légale : exécution du contrat).
+                </li>
             </ul>
             <p>
-                <strong>Aucune donnée n'est utilisée à des fins publicitaires, commerciales,
-                ou cédée à des tiers.</strong>
+                <strong>Aucune donnée n'est utilisée à des fins commerciales autres que
+                la publicité récompensée optionnelle décrite ci-dessus, ni cédée à des
+                tiers en dehors des sous-traitants techniques listés à l'article 4.</strong>
             </p>
         </section>
 
         <section>
             <h2>4. Sous-traitants</h2>
             <p>
-                Pour assurer l'authentification et le stockage du classement, l'application
-                utilise les services suivants :
+                Pour assurer l'authentification, le stockage du classement, l'affichage
+                publicitaire et la gestion des achats, l'application utilise les services
+                suivants :
             </p>
             <ul>
                 <li>
-                    <strong>Firebase Authentication</strong> (Google LLC, États-Unis) — pour
-                    la gestion sécurisée des comptes (Apple / Google / anonyme).
+                    <strong>Firebase Authentication</strong> (Google LLC, États-Unis) — gestion
+                    sécurisée des comptes utilisateurs (Apple / Google / anonyme).
                 </li>
                 <li>
-                    <strong>Cloud Firestore</strong> (Google LLC, États-Unis) — pour le
-                    stockage du classement et des pseudos.
+                    <strong>Cloud Firestore</strong> (Google LLC, États-Unis) — stockage du
+                    classement et des pseudos.
+                </li>
+                <li>
+                    <strong>Google AdMob</strong> (Google Ireland Limited, Irlande) — diffusion
+                    des publicités récompensées. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Politique publicitaire Google</a>.
+                </li>
+                <li>
+                    <strong>Apple StoreKit</strong> (Apple Distribution International Limited, Irlande)
+                    — gestion exclusive de l'achat intégré « Premium Pass ». Aucune donnée
+                    de paiement (carte bancaire, etc.) ne transite par l'application.
                 </li>
             </ul>
             <p>
-                Ces services sont hébergés par Google Cloud Platform, dans des centres de
-                données situés en Europe et aux États-Unis. Le transfert des données vers
+                Les services Google sont hébergés par Google Cloud Platform, dans des centres
+                de données situés en Europe et aux États-Unis. Le transfert des données vers
                 les États-Unis est encadré par les clauses contractuelles types de la
                 Commission européenne et le Data Privacy Framework approuvé en juillet 2023.
             </p>
         </section>
 
         <section>
-            <h2>5. Durée de conservation</h2>
+            <h2>5. App Tracking Transparency (ATT)</h2>
+            <p>
+                Conformément aux exigences d'Apple depuis iOS 14.5, l'application affiche un
+                pop-up système avant tout suivi publicitaire personnalisé. Ce pop-up vous
+                propose deux choix :
+            </p>
+            <ul>
+                <li>
+                    <strong>« Autoriser le suivi »</strong> : AdMob peut utiliser votre IDFA
+                    pour personnaliser les publicités, ce qui peut générer des revenus
+                    publicitaires plus élevés pour l'éditeur.
+                </li>
+                <li>
+                    <strong>« Demander à l'app de ne pas suivre »</strong> : aucun suivi
+                    inter-applications n'est effectué. Les publicités restent disponibles mais
+                    non personnalisées.
+                </li>
+            </ul>
+            <p>
+                <strong>Votre choix est respecté à 100 %</strong> et peut être modifié à
+                tout moment dans les Réglages iOS → Confidentialité et sécurité → Suivi.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Durée de conservation</h2>
             <p>
                 Vos données sont conservées tant que votre compte est actif. En cas de
                 suppression de compte (depuis les paramètres de l'application), toutes vos
@@ -173,10 +242,14 @@
                 Si vous n'utilisez plus l'application pendant 3 ans, vos données peuvent être
                 supprimées automatiquement à l'issue de cette période.
             </p>
+            <p>
+                Les données techniques collectées par AdMob sont conservées selon la politique
+                de Google : <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+            </p>
         </section>
 
         <section>
-            <h2>6. Vos droits</h2>
+            <h2>7. Vos droits</h2>
             <p>
                 Conformément au RGPD, vous disposez à tout moment des droits suivants :
             </p>
@@ -187,6 +260,7 @@
                 <li><strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré.</li>
                 <li><strong>Droit d'opposition</strong> : vous opposer au traitement.</li>
                 <li><strong>Droit à la limitation</strong> du traitement.</li>
+                <li><strong>Droit de retirer votre consentement</strong> au suivi publicitaire à tout moment via les Réglages iOS.</li>
             </ul>
             <p>
                 Pour exercer ces droits, contactez-moi à
@@ -201,7 +275,7 @@
         </section>
 
         <section>
-            <h2>7. Sécurité</h2>
+            <h2>8. Sécurité</h2>
             <p>
                 Les données sont stockées de façon sécurisée sur l'infrastructure Google Cloud
                 (Firebase), chiffrées au repos et en transit (TLS 1.3). L'accès aux données
@@ -211,20 +285,26 @@
         </section>
 
         <section>
-            <h2>8. Mineurs</h2>
+            <h2>9. Mineurs</h2>
             <p>
                 L'application est tout public et ne cible pas spécifiquement les enfants de
                 moins de 13 ans. Si vous êtes un parent et constatez que votre enfant a
                 fourni des données sans votre consentement, contactez-moi pour suppression
                 immédiate à <a href="mailto:contact@abasketcase.app">contact@abasketcase.app</a>.
             </p>
+            <p>
+                Conformément à la politique d'Apple, les mineurs ne peuvent effectuer un achat
+                intégré qu'avec l'autorisation parentale via la fonctionnalité « Demande
+                d'autorisation d'achat » (Ask to Buy) d'Apple Family Sharing.
+            </p>
         </section>
 
         <section>
-            <h2>9. Modifications</h2>
+            <h2>10. Modifications</h2>
             <p>
                 Cette politique peut être mise à jour pour refléter des changements
-                réglementaires ou techniques. La date de dernière mise à jour est indiquée
+                réglementaires ou techniques (ajout d'un partenaire publicitaire, nouvelle
+                fonctionnalité, etc.). La date de dernière mise à jour est indiquée
                 en haut du document. Les modifications substantielles seront communiquées
                 via l'application.
             </p>
